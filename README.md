@@ -1,79 +1,85 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+#CRUD Emoji
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+##Tabella/entità
+emoji
 
-## About Laravel
+##Colonne da creare 
+'slug',
+'character',
+'unicodeName',
+'codePoint',
+'group',
+'subGroup'
+'created_at'
+'updated_at'
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## sql da usare per inserire i dati una volta fatta la tabella
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+INSERT INTO `emoji` (`id`, `slug`, `character`, `unicodeName`, `codePoint`, `group`, `subGroup`, `created_at`, `updated_at`) VALUES
+(1, 'grinning-face', '😀', 'grinning face', '1F600', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(2, 'grinning-face-with-big-eyes', '😃', 'grinning face with big eyes', '1F603', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(3, 'grinning-face-with-smiling-eyes', '😄', 'grinning face with smiling eyes', '1F604', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(4, 'beaming-face-with-smiling-eyes', '😁', 'beaming face with smiling eyes', '1F601', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(5, 'grinning-squinting-face', '😆', 'grinning squinting face', '1F606', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(6, 'grinning-face-with-sweat', '😅', 'grinning face with sweat', '1F605', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(7, 'rolling-on-the-floor-laughing', '🤣', 'rolling on the floor laughing', '1F923', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(8, 'face-with-tears-of-joy', '😂', 'face with tears of joy', '1F602', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(9, 'slightly-smiling-face', '🙂', 'slightly smiling face', '1F642', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(10, 'upside-down-face', '🙃', 'upside-down face', '1F643', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(11, 'winking-face', '😉', 'winking face', '1F609', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(12, 'smiling-face-with-smiling-eyes', '😊', 'smiling face with smiling eyes', '1F60A', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(13, 'smiling-face-with-halo', '😇', 'smiling face with halo', '1F607', 'smileys-emotion', 'face-smiling', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(14, 'smiling-face-with-hearts', '🥰', 'smiling face with hearts', '1F970', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(15, 'smiling-face-with-heart-eyes', '😍', 'smiling face with heart-eyes', '1F60D', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(16, 'star-struck', '🤩', 'star-struck', '1F929', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(17, 'face-blowing-a-kiss', '😘', 'face blowing a kiss', '1F618', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(18, 'kissing-face', '😗', 'kissing face', '1F617', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(19, 'smiling-face', '☺️', 'smiling face', '263A FE0F', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(20, 'kissing-face-with-closed-eyes', '😚', 'kissing face with closed eyes', '1F61A', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(21, 'kissing-face-with-smiling-eyes', '😙', 'kissing face with smiling eyes', '1F619', 'smileys-emotion', 'face-affection', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(22, 'face-savoring-food', '😋', 'face savoring food', '1F60B', 'smileys-emotion', 'face-tongue', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(23, 'face-with-tongue', '😛', 'face with tongue', '1F61B', 'smileys-emotion', 'face-tongue', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(24, 'winking-face-with-tongue', '😜', 'winking face with tongue', '1F61C', 'smileys-emotion', 'face-tongue', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(25, 'zany-face', '🤪', 'zany face', '1F92A', 'smileys-emotion', 'face-tongue', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(26, 'squinting-face-with-tongue', '😝', 'squinting face with tongue', '1F61D', 'smileys-emotion', 'face-tongue', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(27, 'money-mouth-face', '🤑', 'money-mouth face', '1F911', 'smileys-emotion', 'face-tongue', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(28, 'hugging-face', '🤗', 'hugging face', '1F917', 'smileys-emotion', 'face-hand', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(29, 'face-with-hand-over-mouth', '🤭', 'face with hand over mouth', '1F92D', 'smileys-emotion', 'face-hand', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(30, 'shushing-face', '🤫', 'shushing face', '1F92B', 'smileys-emotion', 'face-hand', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(31, 'thinking-face', '🤔', 'thinking face', '1F914', 'smileys-emotion', 'face-hand', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(32, 'zipper-mouth-face', '🤐', 'zipper-mouth face', '1F910', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(33, 'face-with-raised-eyebrow', '🤨', 'face with raised eyebrow', '1F928', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(34, 'neutral-face', '😐', 'neutral face', '1F610', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(35, 'expressionless-face', '😑', 'expressionless face', '1F611', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(36, 'face-without-mouth', '😶', 'face without mouth', '1F636', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(37, 'smirking-face', '😏', 'smirking face', '1F60F', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(38, 'unamused-face', '😒', 'unamused face', '1F612', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(39, 'face-with-rolling-eyes', '🙄', 'face with rolling eyes', '1F644', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(40, 'grimacing-face', '😬', 'grimacing face', '1F62C', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(41, 'lying-face', '🤥', 'lying face', '1F925', 'smileys-emotion', 'face-neutral-skeptical', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(42, 'relieved-face', '😌', 'relieved face', '1F60C', 'smileys-emotion', 'face-sleepy', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(43, 'pensive-face', '😔', 'pensive face', '1F614', 'smileys-emotion', 'face-sleepy', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(44, 'sleepy-face', '😪', 'sleepy face', '1F62A', 'smileys-emotion', 'face-sleepy', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(45, 'drooling-face', '🤤', 'drooling face', '1F924', 'smileys-emotion', 'face-sleepy', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(46, 'sleeping-face', '😴', 'sleeping face', '1F634', 'smileys-emotion', 'face-sleepy', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(47, 'face-with-medical-mask', '😷', 'face with medical mask', '1F637', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(48, 'face-with-thermometer', '🤒', 'face with thermometer', '1F912', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(49, 'face-with-head-bandage', '🤕', 'face with head-bandage', '1F915', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(50, 'nauseated-face', '🤢', 'nauseated face', '1F922', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(51, 'face-vomiting', '🤮', 'face vomiting', '1F92E', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(52, 'sneezing-face', '🤧', 'sneezing face', '1F927', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(53, 'hot-face', '🥵', 'hot face', '1F975', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(54, 'cold-face', '🥶', 'cold face', '1F976', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(55, 'woozy-face', '🥴', 'woozy face', '1F974', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(56, 'dizzy-face', '😵', 'dizzy face', '1F635', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(57, 'exploding-head', '🤯', 'exploding head', '1F92F', 'smileys-emotion', 'face-unwell', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(58, 'cowboy-hat-face', '🤠', 'cowboy hat face', '1F920', 'smileys-emotion', 'face-hat', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(59, 'partying-face', '🥳', 'partying face', '1F973', 'smileys-emotion', 'face-hat', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(60, 'smiling-face-with-sunglasses', '😎', 'smiling face with sunglasses', '1F60E', 'smileys-emotion', 'face-glasses', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(61, 'nerd-face', '🤓', 'nerd face', '1F913', 'smileys-emotion', 'face-glasses', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(62, 'face-with-monocle', '🧐', 'face with monocle', '1F9D0', 'smileys-emotion', 'face-glasses', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(63, 'confused-face', '😕', 'confused face', '1F615', 'smileys-emotion', 'face-concerned', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(64, 'worried-face', '😟', 'worried face', '1F61F', 'smileys-emotion', 'face-concerned', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(65, 'slightly-frowning-face', '🙁', 'slightly frowning face', '1F641', 'smileys-emotion', 'face-concerned', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(66, 'frowning-face', '☹️', 'frowning face', '2639 FE0F', 'smileys-emotion', 'face-concerned', '2020-03-23 14:35:10', '2020-03-23 14:35:10'),
+(67, 'face-with-open-mouth', '😮', 'face with open mouth', '1F62E', 'smileys-emotion', 'face-concerned', '2020-03-23 14:35:10', '2020-03-23 14:35:10');

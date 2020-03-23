@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bfad04b-1835-4cda-9341-8226054f5073" name="Default Changelist" comment="" />
+    <list default="true" id="9bfad04b-1835-4cda-9341-8226054f5073" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Emoji.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_23_153153_create_emoji_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/emojiTableSeeder.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +33,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -127,6 +137,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ZX783e1Nm1DjQ1uhnOyeMifjyF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -135,6 +146,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -175,7 +187,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584973421962</updated>
-      <workItem from="1584973424421" duration="2764000" />
+      <workItem from="1584973424421" duration="3104000" />
     </task>
     <servers />
   </component>
@@ -183,9 +195,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1137" y="23" width="1005" height="992" key="search.everywhere.popup" timestamp="1584981891994">
+    <state x="1137" y="23" width="1005" height="992" key="search.everywhere.popup" timestamp="1584982148296">
       <screen x="0" y="23" width="2560" height="992" />
     </state>
-    <state x="1137" y="23" width="1005" height="992" key="search.everywhere.popup/2560.-1016.1080.2560/0.23.2560.992/-1440.0.1440.900@0.23.2560.992" timestamp="1584981891994" />
+    <state x="1137" y="23" width="1005" height="992" key="search.everywhere.popup/2560.-1016.1080.2560/0.23.2560.992/-1440.0.1440.900@0.23.2560.992" timestamp="1584982148296" />
   </component>
 </project>
