@@ -26,7 +26,7 @@ class EmojiController extends Controller
      */
     public function create()
     {
-        //
+        return view("emoji.create");
     }
 
     /**
@@ -37,7 +37,24 @@ class EmojiController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $request->validate([
+            "slug"=>"required|unique:emoji",
+            "character"=>"required",
+            "unicodeName"=>"required|unique:emoji|max:100",
+            "codePoint"=>"required|unique:emoji|max:15",
+            "group"=>"required|max:100",
+            "subGroup"=>"required|max:100",
+        ]);
+
+        $newItem = new Emoji;
+
+        $newItem->fill($data);
+
+        $newItem->save();
+
+        return redirect()->route("emoji.show", $newItem);
     }
 
     /**
