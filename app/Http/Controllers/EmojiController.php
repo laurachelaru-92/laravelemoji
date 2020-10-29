@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Emoji;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class EmojiController extends Controller
 {
@@ -77,7 +78,7 @@ class EmojiController extends Controller
      */
     public function edit(Emoji $emoji)
     {
-        //
+        return view('emoji.edit', compact('emoji'));
     }
 
     /**
@@ -89,7 +90,30 @@ class EmojiController extends Controller
      */
     public function update(Request $request, Emoji $emoji)
     {
-        //
+        $data = $request->all();
+
+        $request->validate([
+            "slug"=> [
+                "required",
+                Rule::unique('emoji')->ignore($emoji),
+            ],
+            "character"=>"required",
+            "unicodeName"=> [
+                "required",
+                "max:100",
+                Rule::unique('emoji')->ignore($emoji),
+            ],
+            "codePoint"=> [
+                "required",
+                "max:15",
+                Rule::unique('emoji')->ignore($emoji),
+            ],
+            "group"=>"required|max:100",
+            "subGroup"=>"required|max:100",
+        ]);
+
+        $emoji->update($data);
+        return redirect()->route("emoji.show", $emoji);
     }
 
     /**
