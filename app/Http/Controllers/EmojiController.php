@@ -14,7 +14,9 @@ class EmojiController extends Controller
      */
     public function index()
     {
-        //
+        $emoji = Emoji::all();
+        //dd($emoji);
+        return view('emoji.index', compact('emoji'));
     }
 
     /**
@@ -46,7 +48,8 @@ class EmojiController extends Controller
      */
     public function show(Emoji $emoji)
     {
-        //
+        
+        return view('emoji.show', compact('emoji'));
     }
 
     /**
