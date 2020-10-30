@@ -1,0 +1,53 @@
+#index-wrapper {
+    padding: 30px;
+
+    a {
+        text-decoration: none;
+        color: #000;
+        border-radius: 7px;
+        padding: 10px;
+        font-size: 12px;
+
+        &#add-new {
+            background-color: #dab3ff;
+            color: #fff;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            padding: 20px;
+
+            a {
+
+                &.emoji-face {
+                    font-size: 40px;
+                }
+
+                &.edit {
+                    color: #fff;
+                    background-color: #999999;
+                }
+            }
+
+            form {
+                display: inline-block;
+
+                input {
+                    background-color: #000;
+                    color: #fff;
+                    border: none;
+                    padding: 10px 20px; 
+                    border-radius: 7px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

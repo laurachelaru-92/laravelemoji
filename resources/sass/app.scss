@@ -1,1 +1,18 @@
-//
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// Partials
+@import 'Partials/_index.scss';
+@import 'Partials/_create.scss';
+@import 'Partials/_edit.scss';
+@import 'Partials/_show.scss';
+
+
+// Page setting
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
